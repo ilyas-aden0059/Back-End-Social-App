@@ -1,0 +1,24 @@
+## Server
+server:
+  port: 9000
+
+jwt:
+  secret: ovMItsR+uPsSt/oDe+mf6toajpR5RdBsow45BWi0WiTU2pjnM006v70isQRkaYvv
+  expirationMs: 86400000
+
+
+## MySQL
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://0.0.0.0:3306/ums?serverTimezone=UTC&useLegacyDatetimeCode=false
+    username: root
+    password: passw
+
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: 230a7bec810a554eff65
+            clientSecret: b1122ce5879c5f6889a8bfb96016535807b8fc6b
